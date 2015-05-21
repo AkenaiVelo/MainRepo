@@ -27,7 +27,7 @@ public class PrintPersonService {
             person=new PersonViewDAO();
         }
         List<EnginePersons> tempList=person.findAll();
-        System.out.println(tempList.get(0).getFirstname());
+        //System.out.println(tempList.get(0).getFirstname());
         List<PersonDTO> wynik=new ArrayList<>();
         for(int i=0;i<tempList.size();i++)
         {
