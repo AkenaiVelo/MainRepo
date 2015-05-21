@@ -23,11 +23,11 @@ public class PrintPersonService {
     {
         if(person==null)
         {
-            System.err.println("pusty person w print service");
+            System.out.println("pusty person w print service");
             person=new PersonViewDAO();
         }
         List<EnginePersons> tempList=person.findAll();
-        //System.out.println(tempList.get(0).getFirstname());
+        System.out.println(tempList.get(0).getFirstname());
         List<PersonDTO> wynik=new ArrayList<>();
         for(int i=0;i<tempList.size();i++)
         {
