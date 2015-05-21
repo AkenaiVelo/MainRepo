@@ -9,13 +9,14 @@ import javax.persistence.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 //import org.hibernate.*;
-@Repository("addressViewDAO")
+@Repository
 public class AddressViewDAO {
     //private Session session;
     private EntityManager mg;
 
     public AddressViewDAO() {
-        //session=HibernateUtil.getSessionFactory().openSession(); 
+        //session=HibernateUtil.getSessionFactory().openSession();
+        System.out.println("Konstruktor Adres View DAO");
         mg=Persistence.createEntityManagerFactory( "example-unit" ).createEntityManager();  
     }
     @Transactional

@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/info")
 public class AboutControler {
-    //@Autowired
-    //private PrintPersonService service;
+    @Autowired
+    private PrintPersonService service;
 
     public AboutControler() {
-        System.out.println("Kontroler");
+        System.out.println("Kontroler gjukhgjk");
     }
     
     

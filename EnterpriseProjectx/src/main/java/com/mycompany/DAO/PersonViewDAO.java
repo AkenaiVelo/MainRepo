@@ -7,12 +7,13 @@ import javax.persistence.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 //import org.hibernate.*;
-@Repository("personViewDAO")
+@Repository
 public class PersonViewDAO {
     //private Session session;
     private EntityManager mg;
 
     public PersonViewDAO() {
+        System.out.println("Konstruktor Person View DAO");
         //session=HibernateUtil.getSessionFactory().openSession(); 
         mg=Persistence.createEntityManagerFactory( "example-unit" ).createEntityManager();  
     }
